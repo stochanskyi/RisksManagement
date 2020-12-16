@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import com.mars.risksmanagement.presentation.common.extensions.BackPressListener
 import com.mars.risksmanagement.presentation.common.extensions.FragmentHolder
 
-abstract class BaseFragment<T: IBasePresenter<IBaseView>>: Fragment,
+abstract class BaseFragment<T: IBasePresenter<out IBaseView>>: Fragment,
     IBaseFragment,
     FragmentHolder,
     BackPressListener {
